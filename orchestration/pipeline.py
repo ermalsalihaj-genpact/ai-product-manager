@@ -149,7 +149,7 @@ def run_pipeline(bundle_path: str, out_dir: str | None = None) -> str:
         # Ensure backlog exists even if generation failed
         _create_placeholders(target_dir)
 
-    # 5) Placeholders for other artifacts
+    # Placeholders for other artifacts
     _create_placeholders(target_dir)
 
     return str(target_dir)
